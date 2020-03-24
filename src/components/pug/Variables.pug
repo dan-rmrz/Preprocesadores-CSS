@@ -1,0 +1,17 @@
+-var imagen = "../src/assets/static/imagen.png"
+-var favIcon = "../src/assets/static/favicon.png"
+-var tituloPrincipal = "Titulo Principal"
+-var subtitulos = ["Subtitulo 1", "Subtitulo 2", "Subtitulo 3", "Subtitulo 4", "Subtitulo 5", "Subtitulo 6"]
+-var enlaces = ["Acerca", "Noticias", "Contacto"]
+//- -var usuario = "Daniel"
+
+mixin caja(imgCaja, titulo, contenido)
+	.caja
+		.caja__imagen: img(src= imgCaja, alt="imagen", srcset= imgCaja)
+		.caja__contenido
+			h3 #{titulo}
+			p #{contenido}
+				|Lorem ipsum dolor sit amet, consectetur adipisicing 
+				|elit, sed do eiusmod tempor incididunt ut labore et 
+				|dolore magna aliqua.
+			a.boton Leer Más

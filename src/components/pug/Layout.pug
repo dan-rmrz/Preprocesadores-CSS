@@ -1,0 +1,20 @@
+include ./Variables.pug
+
+<!DOCTYPE html>
+html(lang="es")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		link(rel="stylesheet", href="../src/assets/styles/pug/Landing.css")
+		link(rel="shortcut icon", href= favIcon, type="image/x-icon")
+		//- La ruta de los estilos se hace como si el archivo
+		//- fuera llamado desde index.pug en la raíz del proyecto
+		//- y no desde este componente (href="../../assets/styles/pug/Landing.css)"
+		title Landing
+	body
+		
+		include ./header.pug
+
+		block contenidos
+
+		include ./Footer.pug

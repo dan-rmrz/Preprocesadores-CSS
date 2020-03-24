@@ -1,0 +1,27 @@
+extends ./Layout.pug
+
+block contenidos
+		section.intro
+			div.intro__contenedor
+				.intro__imagen: img(src= imagen, alt="imagen", srcset= imagen)
+				//- .intro__imagen: img(src= Sady, alt="Imagen", srcset= Sadysrcset)
+				//- .intro__imagen: img(src= imagen, alt="Imagen", srcset= imagen)
+				//- Al solo agregar el atributo src a una imagen se genera un error
+				//- ya sea con la direccion al archivo o con el uso de variables
+				//- mientras que usando el atributo srcset funciona correctamente
+				//- usando escactamente la misma direccion o variable :/
+				.intro__contenido
+					h2 #{tituloPrincipal}
+					p
+						|Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+						|Magni voluptatibus ea nulla adipisci provident nostrum, 
+						|vel at beatae perferendis maiores iste vero qui, totam 
+						|consectetur, ullam ex earum animi? Nam.
+						span
+							| Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+							| Beatae culpa molestias assumenda aperiam sit consectetur nulla
+					a.boton Leer Más
+		main.contenido
+			.contenido__contenedor
+				each subtitulo in subtitulos
+					+caja(imagen, subtitulo, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
