@@ -1,0 +1,23 @@
+extends ./Layout.pug
+
+block contenidos
+  section
+    .menu
+      h2 Menu
+      ul
+        each enlace in enlaces
+          li #{enlace}
+    .articulo
+      div
+        h2 #{tituloPrincipal}
+        p
+          |Lorem, ipsum dolor sit amet consectetur adipisicing 
+          |elit. Eum, accusamus iste. Error dolor et laborum 
+          |culpa nemo atque corporis modi magni, eveniet distinctio 
+          |assumenda laboriosam ex veniam natus voluptate repudiandae.
+        p
+          |Lorem, ipsum dolor sit amet consectetur adipisicing 
+          |elit. Eum, accusamus iste. Error dolor et laborum 
+          |culpa nemo atque corporis modi magni, eveniet distinctio 
+          |assumenda laboriosam ex veniam natus voluptate repudiandae.
+        a.boton Ver Más

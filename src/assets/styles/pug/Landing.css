@@ -170,3 +170,44 @@ footer li:hover {
 	cursor: pointer;
 	text-decoration: underline;
 }
+
+/* Estilos Reto PUG */
+
+section {
+	display: flex;
+	width: 100%;
+	height: calc(100vh - 200px);
+	flex-direction: row;
+}
+
+.menu {
+	width: 35%;
+	background-color: #EEF1F8;
+}
+
+.menu h2 {
+	padding: 40px 0 0 40px;
+}
+
+.menu li {
+	margin-bottom: 30px;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	list-style: none;
+	color: #384d8e;
+}
+
+.articulo {
+	width: auto;
+	display: flex;
+	justify-content: center;
+}
+.articulo div {
+	width: 75%;
+}
+
+.articulo p {
+	margin: 15px 0 30px 0;
+	font-size: 20px;
+	line-height: 40px;
+}
