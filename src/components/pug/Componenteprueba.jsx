@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../assets/styles/pug/Landing.css';
-import imagen from '../../assets/static/imagen.png';
+import imagen from '../../assets/static/pug/imagen.png';
 
 const Componenteprueba = () => (
 	<>

@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Componenteprueba from './components/pug/Componenteprueba';
+import Articulo from './components/less/Articulo';
 
 const container = document.getElementById('app');
-ReactDOM.render(<Componenteprueba />, container);
+
+ReactDOM.render(<Articulo />, container);
