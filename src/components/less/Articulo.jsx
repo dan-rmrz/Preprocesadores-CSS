@@ -1,12 +1,16 @@
 import React from 'react';
+
+import intro from '../../assets/static/less/intro.jpg'
 import avatar from '../../assets/static/less/avatar.jpg'
 import xbox from '../../assets/static/less/xbox.jpg'
 import fortnite from '../../assets/static/less/fortnite.jpg'
 import cuphead from '../../assets/static/less/cuphead.jpg'
 
+import '../../assets/styles/less/Articulo.less'
+
 const Articulo = () => pug`
   section.intro
-    .intro__imagen: img(src=avatar, alt="Avatar")
+    .intro__imagen: img(src=intro, alt="Hero imagen")
     .intro__contenido
       span.intro__categoria Noticias
       h1.intro__titulo Cyberpunk 2077 tiene tres prólogos distintos
@@ -49,12 +53,12 @@ const Articulo = () => pug`
     .caja
       .caja__imagen: img(src=xbox, alt="Xbox Game Pass")
       .caja__contenido
-      span.caja__categoria Xbox
-      h3 Conoce las actualizaciones de Game Pass
-      p
-        |A una semana terminado el E3, Microsoft anunció la 1era rotación 
-        |de juegos para Xbox
-      a Leer Mas
+        span.caja__categoria Xbox
+        h3 Conoce las actualizaciones de Game Pass
+        p
+          |A una semana terminado el E3, Microsoft anunció la 1era rotación 
+          |de juegos para Xbox
+        a Leer Mas
     .caja
       .caja__imagen: img(src=fortnite, alt="Fortnite")
       .caja__contenido
