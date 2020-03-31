@@ -9,6 +9,7 @@
   position: relative;
   background-color: @color-claro;
   .sombra-caja;
+
   &__imagen {
     // width: 1320px;
     width: calc(100% - 20px); // se resta el padding del contenedor
@@ -19,6 +20,7 @@
       object-fit: cover;
     }
   }
+
   &__contenido {
     width: 50%;
     margin: 0;
@@ -27,16 +29,19 @@
     text-align: center;
     color: @color-claro;
   }
+
   &__categoria {
     // color: rgba(@color-claro, 0.5);
     color: fade(@color-claro, 50%);
     .fuente2;
   }
+  
   &__titulo {
     font-size: 50px;
     .fuente2;
     .tamano-fuente(50px);
   }
+
   &__autor {
     width: 150px;
     margin: 0;
@@ -50,9 +55,11 @@
       padding-right: 10px;
       border-radius: 50%;
     }
+
     span {
       display: inline-block;
     }
+    
     &-titulo {
       color: fade(@color-claro, 50%);
     }

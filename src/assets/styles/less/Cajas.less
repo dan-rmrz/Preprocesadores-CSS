@@ -3,26 +3,40 @@
   width: 90%;
   margin: 0 auto;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .caja {
   width: 30%;
   max-width: 430px;
+  margin-bottom: 40px;
   .sombra-caja;
+
   &__imagen {
+    margin-bottom: -7px;
     overflow: hidden;
   }
+
   &__contenido {
     padding: 25px;
     background-color: @color-claro;
   }
+
   span {
     color: @color-secundario;
     .fuente2;
   }
+
   a {
+    padding: 5px 15px;
+    background-color: @color-secundario;
+    border-radius: 5px;
     text-decoration: none;
-    color: @color-variacion;
+    color: @color-claro;
     .fuente2;
+  }
+
+  a:hover {
+    cursor: pointer;
   }
 }

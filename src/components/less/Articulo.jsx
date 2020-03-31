@@ -67,7 +67,7 @@ const Articulo = () => pug`
         p
           |Portales hacia el Upside Down han aparecido dentro de 
           |Fortnite, y aunque no funcionan igual.
-        a Lees Mas
+        a Leer Mas
     .caja
       .caja__imagen: img(src=cuphead, alt="Cuphead")
       .caja__contenido
@@ -76,7 +76,34 @@ const Articulo = () => pug`
         p
           |Los miembros de Studio MDHR revelan la razón detrás del 
           |atraso de la fecha de lanzamiento.
-        a Lees Mas
+        a Leer Mas
+    .caja
+      .caja__imagen: img(src=xbox, alt="Xbox Game Pass")
+      .caja__contenido
+        span.caja__categoria Xbox
+        h3 Conoce las actualizaciones de Game Pass
+        p
+          |A una semana terminado el E3, Microsoft anunció la 1era rotación 
+          |de juegos para Xbox
+        a Leer Mas
+    .caja
+      .caja__imagen: img(src=fortnite, alt="Fortnite")
+      .caja__contenido
+        span.caja__categoria Fortnite
+        h3 Fortnite une fuerzas con Stranger Things
+        p
+          |Portales hacia el Upside Down han aparecido dentro de 
+          |Fortnite, y aunque no funcionan igual.
+        a Leer Mas
+    .caja
+      .caja__imagen: img(src=cuphead, alt="Cuphead")
+      .caja__contenido
+        span.caja__categoria Cuphead
+        h3 Cuphead se atrasa hasta el año 2020
+        p
+          |Los miembros de Studio MDHR revelan la razón detrás del 
+          |atraso de la fecha de lanzamiento.
+        a Leer Mas
 
 
     //- +caja(xbox, "Xbox", "Conoce las actualizaciones de Game Pass", "A una semana terminado el E3, Microsoft anunció la 1era rotación de juegos para Xbox")
