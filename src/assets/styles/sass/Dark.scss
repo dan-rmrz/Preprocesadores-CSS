@@ -1,0 +1,25 @@
+.perfil {
+  background-color: $color-claro;
+
+  &__nombre {
+    color: $color-secundario;
+  }
+
+  &__titulo {
+    color: get-opacity($color-variacion, 0.6);
+  }
+}
+
+.articulos {
+  background-color: $color-principal;
+}
+
+.articulo {
+  &__titulo {
+    color: $color-claro;
+  }
+
+  &__descripcion {
+    color: $color-claro;
+  }
+}
