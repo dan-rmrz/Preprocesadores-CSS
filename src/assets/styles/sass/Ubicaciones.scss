@@ -1,0 +1,28 @@
+.ubicacion--perfil{
+  display: flex;
+  height: 90px;
+  margin: 30px auto;
+  // padding: 20px 0 0 50px;
+  justify-content: center;
+  align-items: center;
+  @include caja;
+
+  img {
+    display: block;
+    float: left;
+    padding-right: 25px;
+    height: 40px;
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: 20px;
+    @include titulos($fuente2);
+  }
+
+  h3 {
+    font-size: 12px;
+    color: get-opacity($color-principal, 0.5);
+    @include titulos($fuente2);
+  }
+}

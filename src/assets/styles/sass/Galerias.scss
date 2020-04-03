@@ -1,0 +1,49 @@
+.galeria {
+  display: flex;
+  height: 250px;
+  margin: 10px auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include caja;
+
+  &__contenedor {
+    display: flex;
+    width: 90%;
+    max-width: 350px;
+    justify-content: space-between;
+  }
+
+  &__foto-principal {
+    width: 40%;
+    float: left;
+    // margin-right: 10px;
+  }
+
+  &__fotos-adicionales {
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    max-width: 160px;
+    justify-content: space-between;
+
+    img {
+      height: 70px;
+      margin-right: 5px;
+      margin-bottom: 10px;
+    }
+  }
+
+  h2 {
+    width: 90%;
+    max-width: 350px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    @include titulos($fuente2);
+  }
+
+  img {
+    border-radius: 10px;
+  }
+}

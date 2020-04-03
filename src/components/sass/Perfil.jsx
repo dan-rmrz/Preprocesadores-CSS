@@ -16,8 +16,8 @@ const Perfil = () => pug`
 	main
 		section.perfil
 			img.perfil__avatar(src= avatar)
-			h2.perfil__npmbre Jhon Wick
-			h3.prefil__titulo Asesino Legendario
+			h2.perfil__nombre Jhon Wick
+			h3.perfil__titulo Asesino Legendario
 			a.perfil__boton Seguir
 			.estadistica--perfil
 				//- +stats("12k", "Seguidores")
@@ -38,25 +38,28 @@ const Perfil = () => pug`
 				h2 Acerca de Mi
 				h3 Asesino a sueldo retirado y amante de perros
 			.ubicacion--perfil
-				img(src= mapMarker)
-				h2 Estados Unidos
-				h3 227km Cerca
+				div
+					img(src= mapMarker)
+				div
+					h2 Estados Unidos
+					h3 227km Cerca
 			.galeria
 				h2 Mis Fotos
-				.galeria__foto-principal: img(src= galeria1)
-				.galeria__fotos-adicionales
-					img(src= galeria2 width="160")
-					img(src= galeria3)
-					img(src= galeria4)
+				.galeria__contenedor
+					.galeria__foto-principal: img(src= galeria1)
+					.galeria__fotos-adicionales
+						img(src= galeria2 width="160")
+						img(src= galeria3)
+						img(src= galeria4)
 		aside.articulos
-			//- +article("Playstation", "GTA VI: Filtraciones que son bastante dudosas","Recientemente se filtró en Internet una importante cantidad de supuesta información sobre Grand Theft Auto VI (GTA VI) que nos ofrece una muy buena idea de lo que podemos esperar.")
+			//- +article("Playstation", "GTA VI: Filtraciones de información que son bastante dudosas","Recientemente se filtró en Internet una importante cantidad de supuesta información sobre Grand Theft Auto VI (GTA VI) que nos ofrece una muy buena idea de lo que podemos esperar.")
 			//- +article("Switch", "Secuela de The Legend of Zelda: Breath of the Wild anunciada en el E3 2019","Nintendo anunció la secuela de The Legend of Zelda: Breath of the Wild en el E3 2019 y todos estamos más que emocionados con esto.")
 			//- +article("Xbox", "Red Dead Online recibe actualización masiva y sale de Beta","Rockstar lanzó el día de hoy la actualización más grande de Red Dead Online desde que el componente online de Red Dead Redemption 2 se lanzó en noviembre.")
 			//- Mixins no son soportados por transform-react-pug :/
 
 			.articulo
 				span.articulo__categoria Playstation
-				h2.articulo__titulo GTA VI: Filtraciones que son bastante dudosas
+				h2.articulo__titulo GTA VI: Filtraciones de información que son bastante dudosas
 				p.articulo__descripcion
 					|Recientemente se filtró en Internet una importante cantidad de 
 					|supuesta información sobre Grand Theft Auto VI (GTA VI) que nos 
