@@ -48,6 +48,16 @@ module.exports = {
 				]
 			},
 			{
+				test: /\.styl$/,
+				use: [
+					{
+						loader: MiniCssExtractPlugin.loader
+					},
+					'css-loader',
+					'stylus-loader'
+				]
+			},
+			{
 				test: /\.(png|jpe?g|gif|jpg)$/,
 				use: [
 					{
@@ -66,7 +76,7 @@ module.exports = {
 			filename: './index.html'
 		}),
 		new MiniCssExtractPlugin({
-			filename: 'assets/[name].css'
+			filename: '[name].css'
 		})
 	]
 }

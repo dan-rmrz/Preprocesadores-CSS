@@ -1,12 +1,22 @@
 //- include ../src/components/less/Variables.pug
 //- ^^^Archivo usado en el modulo de less^^^
 
+//- include ../src/components/sass/Variables.pug
+//- ^^^Archivo usado en el modulo de sass^^^
+
+//- include ../src/components/stylus/Variables.pug
+//- ^^^Archivo usado en el modulo de stylus^^^
+
+//- Los archivos "Variables.pug" no son utilizados pues contienen 
+//- unicamente mixins que actualmente 04/2020 no son soportados 
+//- por el plugin de babel transform-react-pug
+
 <!DOCTYPE html>
 html(lang="es")
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    link(rel="shortcut icon", href="../src/assets/static/sass/sass.png", type="image/x-icon")
+    link(rel="shortcut icon", href="../src/assets/static/stylus/stylus.png", type="image/x-icon")
     link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lato:400,700|Oswald:400,700&display=swap")
     title PlatziGames
   body
