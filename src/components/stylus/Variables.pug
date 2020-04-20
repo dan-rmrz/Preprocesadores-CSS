@@ -1,6 +1,14 @@
-mixin caja(imagen, category, title, summary)
+mixin caja-imagen(imagen, category, title, summary)
 	.caja
 		a(href="#",class="caja__imagen"): img(src="../images/"+imagen)
+		.caja__contenido
+			span.caja__categoria=category
+			h3=title
+			p=summary
+		+estadistica
+
+mixin caja(category, title, summary)
+	.caja
 		.caja__contenido
 			span.caja__categoria=category
 			h3=title
